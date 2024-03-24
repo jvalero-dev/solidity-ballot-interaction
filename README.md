@@ -69,3 +69,32 @@ Terminal output:
     Proposal 1 0n
     Proposal 2 2n
     Proposal 3 0n
+
+Delegate addr2 vote to addr1, increasing addr1 voting power
+
+```shell
+     npx ts-node --files ./scripts/DelegateVote.ts 0xE9BF09c31E9a2FF48C37338EE913D142A2F83077 0xb2e0DceBaB0D4233E0c1F37C809b54B90cB95E29
+```
+
+Transaction hash: 0xc9aba2c5ed5f69e6d48bacf2be73d7c72e2703422388c3bab92f1475091b0613
+
+Vote on Proposal 1 with addr1
+
+```shell
+    npx ts-node --files ./scripts/CastVote.ts 0xE9BF09c31E9a2FF48C37338EE913D142A2F83077 0
+```
+
+Transaction hash: 0xe73149e1dd2e303f1053d6b1d5bfa59172bb6f2f51eb602f472f36c29daa95b6
+
+Checking current ballot status:
+
+```shell
+    npx ts-node --files ./scripts/CheckVotes.ts 0xE9BF09c31E9a2FF48C37338EE913D142A2F83077
+```
+
+Terminal output:
+
+    Found 3 proposals
+    Proposal 1 2n
+    Proposal 2 2n
+    Proposal 3 0n
