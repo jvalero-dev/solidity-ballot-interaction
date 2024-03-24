@@ -54,3 +54,18 @@ Terminal output:
 
     Querying for proposal:  Proposal 2
     votes: 2
+
+## Jerzy Kraszewski @ sanfarans addr1: 0xb2e0DceBaB0D4233E0c1F37C809b54B90cB95E29, addr2: 0x7269852C4a1F51a8f5647e6Feabb02816954A495
+
+Checking current ballot status:
+
+```shell
+    npx ts-node --files ./scripts/CheckVotes.ts 0xE9BF09c31E9a2FF48C37338EE913D142A2F83077
+```
+
+Terminal output:
+
+    Found 3 proposals
+    Proposal 1 0n
+    Proposal 2 2n
+    Proposal 3 0n
