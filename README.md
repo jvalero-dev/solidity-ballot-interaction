@@ -98,3 +98,23 @@ Terminal output:
     Proposal 1 2n
     Proposal 2 2n
     Proposal 3 0n
+
+## Karlo Sebalj @schelby5 addr1: 0xb2146a0B704Da9701D127B8722C572a6e6693EfD
+Trying to vote without the voting rights:
+```shell
+    npx ts-node --files ./scripts/CastVote.ts 0xE9BF09c31E9a2FF48C37338EE913D142A2F83077 0
+```
+Result: 
+```shell
+  details: 'execution reverted: Has no right to vote',
+  docsPath: undefined,
+  metaMessages: [
+    'Request Arguments:',
+    '  from:  0xb2146a0B704Da9701D127B8722C572a6e6693EfD\n' +
+      '  to:    0xE9BF09c31E9a2FF48C37338EE913D142A2F83077\n' +
+      '  data:  0x0121b93f0000000000000000000000000000000000000000000000000000000000000001'
+  ],
+  shortMessage: 'Execution reverted with reason: Has no right to vote.',
+  version: 'viem@2.8.18'
+```
+
