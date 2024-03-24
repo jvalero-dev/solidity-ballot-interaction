@@ -143,3 +143,5 @@ details: 'execution reverted: You already voted.',
   ],
   shortMessage: 'Execution reverted with reason: You already voted..',
 ```
+
+
