@@ -117,4 +117,10 @@ Result:
   shortMessage: 'Execution reverted with reason: Has no right to vote.',
   version: 'viem@2.8.18'
 ```
+Calling the CastVote.ts script after the voting rights have been given:
+```shell
+    npx ts-node --files ./scripts/CastVote.ts "0xE9BF09c31E9a2FF48C37338EE913D142A2F83077" "1"
+```
+Transaction hash: 0xb56acc78195dda65f3c19d11aebec8fbe2086b9523656118cd2d9a4bcac52eb4
+
 
