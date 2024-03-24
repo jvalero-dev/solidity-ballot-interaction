@@ -123,4 +123,23 @@ Calling the CastVote.ts script after the voting rights have been given:
 ```
 Transaction hash: 0xb56acc78195dda65f3c19d11aebec8fbe2086b9523656118cd2d9a4bcac52eb4
 
+Delegating the vote status to jvalero.dv 0x765A6B5fB4aBE2381bC2Be4928F3D09C978dc5BB
 
+```shell
+    npx ts-node --files ./scripts/Delega
+teVote.ts "0xE9BF09c31E9a2FF48C37338EE913D142A2F83077" "0x765A6B5fB4aBE2381bC2Be4928F3D09C978dc5BB"
+```
+
+Result:
+```shell
+
+details: 'execution reverted: You already voted.',
+  docsPath: undefined,
+  metaMessages: [
+    'Request Arguments:',
+    '  from:  0xb2146a0B704Da9701D127B8722C572a6e6693EfD\n' +
+      '  to:    0xE9BF09c31E9a2FF48C37338EE913D142A2F83077\n' +
+      '  data:  0x5c19a95c000000000000000000000000765a6b5fb4abe2381bc2be4928f3d09c978dc5bb'
+  ],
+  shortMessage: 'Execution reverted with reason: You already voted..',
+```
