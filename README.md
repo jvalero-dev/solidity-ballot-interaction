@@ -145,3 +145,44 @@ details: 'execution reverted: You already voted.',
 ```
 
 
+## Ilya Shulman @kwindi addr: 0x90445D3131521092DB770a8f8122268ADBD526A0
+Voting with the voting rights:
+```shell
+    npx ts-node --files ./scripts/CastVote.ts 0xE9BF09c31E9a2FF48C37338EE913D142A2F83077 1
+```
+
+Transaction hash: 0x7a4bd8bb66b3e28c52d9731f99720aae0c1e3b339583ee1e04ba8d5b5acf0299
+
+Trying to vote for a non-existing proposal (3):
+
+```shell
+    npx ts-node --files ./scripts/castVote.ts 0xE9BF09c31E9a2FF48C37338EE913D142A2F83077 3
+```
+Result: 
+```shell
+     Proposal selected: 
+    ContractFunctionExecutionError: Execution reverted for an unknown reason.
+    
+    Raw Call Arguments:
+      to:    0xE9BF09c31E9a2FF48C37338EE913D142A2F83077
+      data:  0x013cf08b0000000000000000000000000000000000000000000000000000000000000003
+     
+    Contract Call:
+      address:   0xE9BF09c31E9a2FF48C37338EE913D142A2F83077
+      function:  proposals(uint256)
+      args:               (3)
+```
+Delegating the vote status to jvalero.dv 0x765A6B5fB4aBE2381bC2Be4928F3D09C978dc5BB
+
+```shell
+    npx ts-node --files ./scripts/DelegateVote.ts "0xE9BF09c31E9a2FF48C37338EE913D142A2F83077" "0x765A6B5fB4aBE2381bC2Be4928F3D09C978dc5BB"
+```
+Result:
+```shell
+    TransactionExecutionError: Execution reverted with reason: You already voted..
+```
+
+
+
+
+
