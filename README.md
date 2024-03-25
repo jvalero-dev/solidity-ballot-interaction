@@ -182,6 +182,14 @@ Result:
     TransactionExecutionError: Execution reverted with reason: You already voted..
 ```
 
+Delegating the vote status from address 0x07475bC854A1548dc00d0BB952Fe9ba83FdD1ae8 to 0xb2146a0B704Da9701D127B8722C572a6e6693EfD
+
+```shell
+npx ts-node --files ./scripts/DelegateVote.ts "0xE9BF09c31E9a2FF48C37338EE913D142A2F83077" "0xb2146a0B704Da9701D127B8722C572a6e6693EfD"
+```
+
+Transaction Hash 0x9c455b7292451f812142007bae8fec9320b88b40e3ab05f08f897158b7bdef11
+
 
 
 
